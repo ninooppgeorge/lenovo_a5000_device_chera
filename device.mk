@@ -12,7 +12,11 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-LOCAL_PATH := device/lenovo/adder
+LOCAL_PATH := device/lenovo/chera
+
+# Correct bootanimation size for the screen
+TARGET_SCREEN_HEIGHT := 1280
+TARGET_SCREEN_WIDTH := 720
 
 # GPS
 PRODUCT_COPY_FILES += \
@@ -155,7 +159,7 @@ PRODUCT_AAPT_CONFIG := normal hdpi
 PRODUCT_AAPT_PREF_CONFIG := hdpi
 
 # call the proprietary setup
-$(call inherit-product, vendor/lenovo/adder/adder-vendor.mk)
+$(call inherit-product, vendor/lenovo/chera/chera-vendor.mk)
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)

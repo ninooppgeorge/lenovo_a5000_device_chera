@@ -5,7 +5,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
 # Call device specific makefile
-$(call inherit-product, device/lenovo/adder/lineage_adder.mk)
+$(call inherit-product, device/lenovo/chera/chera.mk)
 
 LOCAL_PATH := device/highscreen/giraffe
 
@@ -14,16 +14,16 @@ CM_BUILD := giraffe
 
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
-PRODUCT_BUILD_PROP_OVERRIDES += BUILD_FINGERPRINT=7.1.2/MRA58M/2280749:user/release-keys PRIVATE_BUILD_DESC="adder-user 7.1.2 MRA58M 2280749 release-keys"
+PRODUCT_BUILD_PROP_OVERRIDES += BUILD_FINGERPRINT=7.1.2/MRA58M/2280749:user/release-keys PRIVATE_BUILD_DESC="chera-user 7.1.2 MRA58M 2280749 release-keys"
 
-PRODUCT_NAME := lineage_adder
-PRODUCT_DEVICE := adder
+PRODUCT_NAME := chera
+PRODUCT_DEVICE := chera
 PRODUCT_BRAND := Lenovo
 PRODUCT_MANUFACTURER := Mediatek
 PRODUCT_MODEL := A5000
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_DEVICE="adder"
+    PRODUCT_DEVICE="chera"
 
 # Correct bootanimation size for the screen
 TARGET_SCREEN_HEIGHT := 1280
