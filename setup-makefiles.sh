@@ -25,7 +25,7 @@ VENDOR=lenovo
 INITIAL_COPYRIGHT_YEAR=2018
 
 # Load extractutils and do some sanity checks
-MY_DIR="${BASH_SOURCE%/*}"
+MY_DIR="$PWD"
 if [[ ! -d "$MY_DIR" ]]; then MY_DIR="$PWD"; fi
 
 LINEAGE_ROOT="$MY_DIR"/../../..
