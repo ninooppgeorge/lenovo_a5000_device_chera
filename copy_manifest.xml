@@ -572,8 +572,8 @@
   <project path="tools/tradefederation/contrib" name="platform/tools/tradefederation/contrib" groups="pdk,tradefed" remote="aosp" />
   <project path="tools/tradefederation/core" name="platform/tools/tradefederation" groups="pdk,tradefed" remote="aosp" />
 
-  <project name="ninooppgeorge/lenovo_a5000_device_chera" path="device/lenovo/chera" remote="github" />
-  <project name="ninooppgeorge/lenovo_a5000_vendor_chera" path="vendor/lenovo/chera" remote="github" />
+  <project name="ninooppgeorge/lenovo_a5000_device_chera" path="device/lenovo/chera" remote="github" revision="chera" />
+  <project name="ninooppgeorge/lenovo_a5000_vendor_chera" path="vendor/lenovo/chera" remote="github" revision="chera"/>
 
   <include name="snippets/lineage.xml" />
 

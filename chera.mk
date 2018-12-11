@@ -1,9 +1,9 @@
-LOCAL_PATH := device/highscreen/giraffe
+# LOCAL_PATH := device/highscreen/giraffe
 
-# Common CM stuff
-CM_BUILD := giraffe
-# Inherit from those products. Most specific first.
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+# # Common CM stuff
+# CM_BUILD := giraffe
+# # Inherit from those products. Most specific first.
+# $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 # Inherit from s2 device
 $(call inherit-product, device/lenovo/chera/device.mk)
 
