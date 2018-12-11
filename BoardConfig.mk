@@ -33,15 +33,16 @@ BOARD_FLASH_BLOCK_SIZE := 131072
 BOARD_CUSTOM_BOOTIMG_MK := $(LOCAL_PATH)/tools/bootimg.mk
 MTK_PLATFORM := mt6582
 MTK_PROJECT := chera
-TARGET_KERNEL_SOURCE := kernel/mediatek/chera
+# TARGET_KERNEL_SOURCE := kernel/mediatek/chera
 TARGET_KERNEL_CONFIG := alps_defconfig
 BOARD_KERNEL_CMDLINE :=
 BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x00008000 --ramdisk_offset 0x01000000 --tags_offset 0x00000100
 BOARD_KERNEL_BASE := 0x10000000
 BOARD_KERNEL_PAGESIZE := 2048
+# BOARD_KERNEL_IMAGE_NAME := alps_defconfig
 #KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/arm/arm-eabi-4.8/bin
 #KERNEL_TOOLCHAIN_PREFIX := arm-eabi-
-#TARGET_PREBUILT_KERNEL := device/lenovo/chera/kernel
+TARGET_PREBUILT_KERNEL := device/lenovo/chera/kernel
 
 # Hack for build
 $(shell mkdir -p $(OUT)/obj/KERNEL_OBJ/usr)
